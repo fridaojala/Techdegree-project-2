@@ -25,7 +25,7 @@ a {
 
 .bg-lightgrey {
     background-color: #fafafa;
-    padding: 10px 0;
+    padding-top: 4%;
 }
 /*Main-nav styles*/
 .main-nav {
@@ -119,3 +119,47 @@ hr {
     border: none;
 }
 
+@media screen and (min-width: 768px) {
+    .main-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-nav li {
+        background-color: transparent;
+        padding-left: 2em;
+    }
+
+    #home {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #home img {
+        width: 40%;
+        order: 1;
+    }
+
+    #home p {
+        width: 56%;
+        text-align: left;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .portfolio-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 49%;
+    }
+
+    .card img {
+        margin-bottom: 1.5em;
+    }
+    /*Fixa footer och vita glapprutan ovanför footer*/
+}
