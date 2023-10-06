@@ -5,7 +5,6 @@
 
 /*Default styles*/
 body {
-    font-family: 'Lato', sans-serif;
     margin: 0 auto;
     background-color: #fafafa;
 }
@@ -14,9 +13,22 @@ h1, h2, h3, h4, p {
     text-align: center;
 }
 
+p, li {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
 a {
     text-decoration: none;
-    color: #4a4a4a;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -37,7 +49,7 @@ a {
 }
 
 .main-nav li {
-    background-color: #fff;
+    background-color: #909090;
     padding: 10px 0;
     margin: .5em 0;
     font-weight: 700;
@@ -105,25 +117,51 @@ h3 {
 
 span {
     font-weight: 700;
-    color: #727272;
     padding-left: 1em;
+}
+
+#contact a,
+span {
+    color: #4a4a4a;
 }
 
 .card-bottom {
     padding-bottom: 1em;
 }
 
+.skills {
+    width: 90%;
+    margin: 0 auto;
+    color: #4a4a4a;
+    padding-bottom: .5em;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 8em;
+    padding-bottom: 1em;
+}
+
+.skills li {
+    padding-top: .5em;
+}
+
 /*Footer styles*/
-footer {
+.footer {
     display: flex;
     justify-content: space-between;
-    color: #4a4a4a;
     font-weight: 700;
+}
+
+.footer-mob a {
+    color: #4a4a4a;
 }
 
 hr {
     height: 2px;
-    width: 90%;
     background-color: #e2e2e2;
     border: none;
 }
@@ -140,8 +178,7 @@ hr {
     }
 
     .main-nav li {
-        background-color: transparent;
-        padding-left: 2em;
+        padding: 1em;
     }
 
     #home {
@@ -181,7 +218,7 @@ hr {
         font-size: 1.25rem;
     }
 
-    footer {
+    .footer {
         padding-bottom: 2em;
     }
 
@@ -192,10 +229,25 @@ hr {
     .footer-wide {
         list-style: none;
         display: flex;
+        background-color: #909090;
+        padding: 1em;
+        margin: 0;
     }
 
     .footer-wide li {
-        margin-left: 1em;
+        margin: 0 .5em;
+    }
+
+    #skills {
+        margin-top: 3em;
+    }
+
+    .skills {
+        width: 70%;
+    }
+
+    #skills ul {
+        align-content: space-around;
     }
 }
 
@@ -227,7 +279,11 @@ hr {
         width: 95%;
     }
 
-    footer {
+    .footer {
         font-size: 14px;
+    }
+
+    .skills {
+        width: 55%;
     }
 }
