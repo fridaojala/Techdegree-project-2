@@ -7,6 +7,7 @@
 body {
     font-family: 'Lato', sans-serif;
     margin: 0 auto;
+    background-color: #fafafa;
 }
 
 h1, h2, h3, h4, p {
@@ -23,14 +24,11 @@ a {
     margin: 0 auto;
 }
 
-.bg-lightgrey {
-    background-color: #fafafa;
-    padding-top: 4%;
-}
 /*Main-nav styles*/
 .main-nav {
     text-align: center;
     color: #4a4a4a;
+    padding-top: 3%;
 }
 
 .main-nav ul {
@@ -59,8 +57,19 @@ a {
 }
 
 /*Main styles*/
+.main-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
 #portfolio {
-    margin-top: 3em;
+    margin-top: 2em;
+}
+
+.bg-white {
+    background-color: #fff;
+    padding-top: 3em;
+    width: 100%;
 }
 
 .card img {
@@ -87,7 +96,7 @@ h3 {
 
 #contact {
     color: #909090;
-    padding-top: 2em;
+    padding: 4% 0 1% 0;
 }
 
 #contact h3 {
@@ -119,6 +128,10 @@ hr {
     border: none;
 }
 
+.footer-wide {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .main-nav ul {
         display: flex;
@@ -139,6 +152,7 @@ hr {
     #home img {
         width: 40%;
         order: 1;
+        margin: 0;
     }
 
     #home p {
@@ -161,5 +175,59 @@ hr {
     .card img {
         margin-bottom: 1.5em;
     }
-    /*Fixa footer och vita glapprutan ovanför footer*/
+    
+    #contact {
+        width: 70%;
+        font-size: 1.25rem;
+    }
+
+    footer {
+        padding-bottom: 2em;
+    }
+
+    .footer-mob {
+        display: none;
+    }
+
+    .footer-wide {
+        list-style: none;
+        display: flex;
+    }
+
+    .footer-wide li {
+        margin-left: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-nav h2 {
+        margin-right: auto;
+    }
+
+    .card {
+        width: 32%;
+        margin-bottom: 4em;
+    }
+
+    #contact {
+        width: 55%;
+    }
+
+    .bg-white {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .main-container {
+        width: 95%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
