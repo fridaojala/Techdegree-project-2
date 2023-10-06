@@ -9,15 +9,23 @@ body {
     background-color: #fafafa;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
     text-align: center;
 }
 
-p, li {
+p,
+li {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Merriweather', serif;
     font-weight: 600;
 }
@@ -212,7 +220,7 @@ hr {
     .card img {
         margin-bottom: 1.5em;
     }
-    
+
     #contact {
         width: 70%;
         font-size: 1.25rem;
@@ -220,6 +228,7 @@ hr {
 
     .footer {
         padding-bottom: 2em;
+        font-size: 14px;
     }
 
     .footer-mob {
@@ -277,10 +286,6 @@ hr {
 
     .main-container {
         width: 95%;
-    }
-
-    .footer {
-        font-size: 14px;
     }
 
     .skills {
